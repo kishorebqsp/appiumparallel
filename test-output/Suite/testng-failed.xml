@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="appAct" value="com.android.calculator2.Calculator"/>
+    <parameter name="appPac" value="com.android.calculator2"/>
+    <parameter name="devicename" value="Nphone"/>
+    <parameter name="platformversion" value="7.0"/>
+    <parameter name="URL" value="127.0.0.1:4723/wd/hub"/>
+    <classes>
+      <class name="Testng.Facebook">
+        <methods>
+          <include name="openapp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Testng.Facebook -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="appAct" value="com.asus.calculator.Calculator"/>
+    <parameter name="appPac" value="com.asus.calculator"/>
+    <parameter name="devicename" value="asus"/>
+    <parameter name="platformversion" value="6.0.1"/>
+    <parameter name="URL" value="0.0.0.0:4725/wd/hub"/>
+    <classes>
+      <class name="Testng.Facebook">
+        <methods>
+          <include name="openapp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Testng.Facebook -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

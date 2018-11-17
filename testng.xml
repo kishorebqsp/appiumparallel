@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="Test1">
+  <parameter name="platformversion" value="6.0.1"/>
+  <parameter name="devicename" value="asus"/>
+  <parameter name="appAct" value="com.asus.calculator.Calculator"/>
+  <parameter name="appPac" value="com.asus.calculator"/>
+  <parameter name="URL" value="0.0.0.0:4725/wd/hub"/>
+  <classes>
+  <class name="Testng.Facebook"></class>
+  </classes>
+  </test>
+  
+  <test name="Test2">
+  <parameter name="platformversion" value="7.0"/>
+  <parameter name="devicename" value="Nphone"/>
+  <parameter name="appAct" value="com.android.calculator2.Calculator"/>
+  <parameter name="appPac" value="com.android.calculator2"/>
+  <parameter name="URL" value="127.0.0.1:4723/wd/hub"/>
+  <classes>
+  <class name="Testng.Facebook"></class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
